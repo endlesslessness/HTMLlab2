@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+    <title>table</title>
+
+    <body>
+        <h3 align="center">
+            <a href="index.html">На главную</a> <br>
+            <a href="table.html">Список лучших игр</a>
+        </h3>
+        <details>
+            <summary>График</summary>
+            <form>
+                <h3> Значение по оси X</h3>
+                <input type="radio"  name="graph" value="0"> Студия <br>
+                <input type="radio"  name="graph" value="1"> Жанр <br>
+                <input type="radio"  name="graph" value="2"> Год <br>
+                <h3>Результат</h3>
+                <input type="checkbox" name="result" value="0"> Средний рейтинг <br>
+                <input type="checkbox" name="result" value="1"> Минимальный рейтинг <br> 
+                <input type="checkbox" name="result" value="1"> Максимальный рейтинг рейтинг <br>   
+                <input type="submit">                
+            </form>
+        </details>
+        <details>
+            <summary>Фильтр</summary>
+            <form>
+                Игра <input type="text" name="game"> <br>
+                Студия <input type="text" name="studio"> <br>
+                Жанр <input type="text" name="genre"> <br>
+                Страна <input typ="text name="country"> <br>
+                Год от <input type="number" min="1990" max="2024"> до <input type="number" min="1990" max="2024"> <br>
+                рейтинг от <input type="number" min="0" max="10"> до <input type="number" min="0" max="10"> 
+                <input type="submit">
+            </form>
+        </details>
+        <details>
+            <summary>Сортировка</summary>
+            <form>
+                Первый уровень: <select name="level_1">
+                    <option value="0">Нет</option>
+                    <option value="1" selected>Студия</option>
+                    <option value="3">Жанр</option>
+                    <option value="4" selected>Страна</option>
+                    <option value="5">Год</option>
+                    <option value="6" selected>Рейтинг</option>
+                   </select> По убыванию? <label><input type="checkbox" name="level_1_yb" value="3"></label><br>
+                   Второй уровень: <select name="level_2">
+                    <option value="0">Нет</option>
+                    <option value="1" selected>Студия</option>
+                    <option value="3">Жанр</option>
+                    <option value="4" selected>Страна</option>
+                    <option value="5">Год</option>
+                    <option value="6" selected>Рейтинг</option>
+                   </select> По убыванию? <label><input type="checkbox" name="level_2_yb" value="3"></label><br>
+                   Третий уровень: <select name="level_3">
+                    <option value="0">Нет</option>
+                    <option value="1" selected>Студия</option>
+                    <option value="3">Жанр</option>
+                    <option value="4" selected>Страна</option>
+                    <option value="5">Год</option>
+                    <option value="6" selected>Рейтинг</option>
+                   </select> По убыванию? <label><input type="checkbox" name="level_3_yb" value="3"></label><br>
+                   <input type="submit">
+            </form>
+        </details>
+
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>Игра</th>
+                <th>Студия</th>
+                <th>Жанр</th>
+                <th>Страна</th>
+                <th>Год</th>
+                <th>рейтинг</th>
+            </tr>
+
+            <tr>
+                <td>
+                    Dota 2
+                </td>
+                <td>valve</td>
+                <td>MOBA</td>
+                <td>USA</td>
+                <td>2013</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>
+                    League of Legends
+                </td>
+                <td>Riot games</td>
+                <td>MOBA</td>
+                <td>USA</td>
+                <td>2012</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>
+                    PUBG
+                </td>
+                <td>PUBG studio</td>
+                <td>Battle royale</td>
+                <td>China</td>
+                <td>2017</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>
+                    Rust
+                </td>
+                <td>Facepunch studios</td>
+                <td>Multiplayer survival</td>
+                <td>USA</td>
+                <td>2013</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>
+                    Minecraft
+                </td>
+                <td>Mojang</td>
+                <td>Survival</td>
+                <td>USA</td>
+                <td>2011</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>
+                    Forza
+                </td>
+                <td>Sumo Digital</td>
+                <td>Racing</td>
+                <td>USA</td>
+                <td>2023</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>
+                    Everlasting Summer
+                </td>
+                <td>Dvach</td>
+                <td>Novel</td>
+                <td>Russia</td>
+                <td>2017</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>
+                    World of Warcraft
+                </td>
+                <td>Blizzard Entertainment</td>
+                <td>RPG</td>
+                <td>USA</td>
+                <td>2006</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>
+                    Hearth Stone
+                </td>
+                <td>Blizzard Entertainment</td>
+                <td>Card game</td>
+                <td>USA</td>
+                <td>2014</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Heroes of the storm
+                </td>
+                <td>Blizzard Entertainment</td>
+                <td>MOBA</td>
+                <td>USA</td>
+                <td>2017</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Diablo 3
+                </td>
+                <td>Blizzard Entertainment</td>
+                <td>Action RPG</td>
+                <td>USA</td>
+                <td>2014</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>
+                    The Elder Scrolls 5: Skyrim
+                </td>
+                <td>Bethesda games</td>
+                <td>RPG</td>
+                <td>New Zealand</td>
+                <td>2012</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>
+                    GTA
+                </td>
+                <td>Rockstar games</td>
+                <td>RPG</td>
+                <td>USA</td>
+                <td>2015</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Assasin's creed
+                </td>
+                <td>Electronic arts</td>
+                <td>RPG</td>
+                <td>France</td>
+                <td>2014</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Mass effect 2
+                </td>
+                <td>Electronic arts</td>
+                <td>RPG</td>
+                <td>france</td>
+                <td>2010</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Far Cry 3 
+                </td>
+                <td>Ubisoft</td>
+                <td>Shooter</td>
+                <td>USA</td>
+                <td>2012</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Mafia 2
+                </td>
+                <td>2k games</td>
+                <td>RPG</td>
+                <td>Czech</td>
+                <td>2010</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Need for speed: Most Wanted 
+                </td>
+                <td>Electronic arts</td>
+                <td>Racing</td>
+                <td>France</td>
+                <td>2005</td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Need for speed: Underground
+                </td>
+                <td>Electronic arts</td>
+                <td>Racing</td>
+                <td>France</td>
+                <td>2006</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Fallout 3 
+                </td>
+                <td>Bethesda games</td>
+                <td>RPG</td>
+                <td>USA</td>
+                <td>2008</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Fallout 4
+                </td>
+                <td>Bethesda games</td>
+                <td>RPG</td>
+                <td>USA</td>
+                <td>2015</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Portal 2
+                </td>
+                <td>Valve</td>
+                <td>Puzzle</td>
+                <td>USA</td>
+                <td>2011</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Dragon Age: Origins
+                </td>
+                <td>Electronic arts</td>
+                <td>RPG</td>
+                <td>France</td>
+                <td>2009</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Deus Ex: Human Revolution
+                </td>
+                <td>Square Enix Europe</td>
+                <td>RPG</td>
+                <td>Germany</td>
+                <td>2011</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Metro 2033
+                </td>
+                <td>THQ</td>
+                <td>Shooter</td>
+                <td>USA</td>
+                <td>2010</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Half life 2
+                </td>
+                <td>Valve</td>
+                <td>RPG</td>
+                <td>USA</td>
+                <td>2004</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>
+                    S.T.A.L.K.E.R: Shadow of Chernobyl
+                </td>
+                <td>THQ</td>
+                <td>RPG</td>
+                <td>Ukraine</td>
+                <td>2007</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>
+                    The Witcher 3: Wild Hunt
+                </td>
+                <td>CD Projekt RED</td>
+                <td>RPG</td>
+                <td>Poland</td>
+                <td>2015</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Dishonored
+                </td>
+                <td>Electronic arts</td>
+                <td>Action</td>
+                <td>France</td>
+                <td>2011</td>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td>
+                    S.T.A.L.K.E.R: Clear Sky
+                </td>
+                <td>THQ</td>
+                <td>RPG</td>
+                <td>Ukraine</td>
+                <td>2009</td>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td>
+                    BioShock: Infinite
+                </td>
+                <td>2k games</td>
+                <td>Action</td>
+                <td>Czech</td>
+                <td>2013</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Warcraft 3: Frozen Throne
+                </td>
+                <td>Blizzard Entertainment</td>
+                <td>Strategy</td>
+                <td>USA</td>
+                <td>2003</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Cyberpunk 2077
+                </td>
+                <td>CD projekt RED</td>
+                <td>RPG</td>
+                <td>Poland</td>
+                <td>2020</td>
+                <td>6</td>
+            </tr>
+
+        <tr>
+            <td>
+                The Witcher
+            </td>
+            <td>CD projekt RED</td>
+            <td>RPG</td>
+            <td>Poland</td>
+            <td>2007</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td>
+                The Witcher 2: Assassins of King
+            </td>
+            <td>CD projekt RED</td>
+            <td>RPG</td>
+            <td>Poland</td>
+            <td>2011</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td>
+                Batman: Arkham City
+            </td>
+            <td>Electronic arts</td>
+            <td>Action</td>
+            <td>France</td>
+            <td>2011</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td>
+                Fallout: New Vegas
+            </td>
+            <td>Bethesda games</td>
+            <td>RPG</td>
+            <td>USA</td>
+            <td>2010</td>
+            <td>7</td>
+        </tr>
+                
+        <tr>
+            <td>
+                BioShock
+            </td>
+            <td>2k games</td>
+            <td>Action</td>
+            <td>Czech</td>
+            <td>2007</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                StarCraft 2: Wings of Liberty
+            </td>
+            <td>Blizzard Entertainment</td>
+            <td>Strategy</td>
+            <td>USA</td>
+            <td>2010</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Mirror's Edge
+            </td>
+            <td>Electronic arts</td>
+            <td>Action</td>
+            <td>France</td>
+            <td>2008</td>
+            <td>7</td>
+        </tr>
+                
+        <tr>
+            <td>
+                The Elder Scrolls IV: Oblivion
+            </td>
+            <td>Bethesda games</td>
+            <td>RPG</td>
+            <td>USA</td>
+            <td>2006</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Crysis 2
+            </td>
+            <td>Electronic arts</td>
+            <td>Shooter</td>
+            <td>France</td>
+            <td>2011</td>
+            <td>7</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Batman: Arkham Asylum
+            </td>
+            <td>Electronic arts</td>
+            <td>RPG</td>
+            <td>France</td>
+            <td>2009</td>
+            <td>6</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Dead Space
+            </td>
+            <td>Electronic arts</td>
+            <td>Horror</td>
+            <td>France</td>
+            <td>2008</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                S.T.A.L.K.E.R: Call of Pripyat
+            </td>
+            <td>THQ</td>
+            <td>RPG</td>
+            <td>Ukraine</td>
+            <td>2009</td>
+            <td>10</td>
+        </tr>
+                
+        <tr>
+            <td>
+                L.A. Noire
+            </td>
+            <td>Rockstar games</td>
+            <td>Action</td>
+            <td>USA</td>
+            <td>2011</td>
+            <td>7</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Portal
+            </td>
+            <td>Valve</td>
+            <td>Puzzle</td>
+            <td>USA</td>
+            <td>2007</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Left 4 Dead 2 
+            </td>
+            <td>Valve</td>
+            <td>Shooter</td>
+            <td>USA</td>
+            <td>2009</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Max Payne 3
+            </td>
+            <td>Rockstar games</td>
+            <td>Action</td>
+            <td>Usa</td>
+            <td>2012</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                World of Warcraft III: Reign of Chaos
+            </td>
+            <td>Blizzard Entertainment</td>
+            <td>Strategy</td>
+            <td>Usa</td>
+            <td>2002</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Dead Space 2
+            </td>
+            <td>Electronic arts</td>
+            <td>Horror</td>
+            <td>France</td>
+            <td>2011</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Metro: Last Light
+            </td>
+            <td>THQ</td>
+            <td>Action</td>
+            <td>Poland</td>
+            <td>2013</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Fable: The Lost Chapters
+            </td>
+            <td>Microsoft</td>
+            <td>RPG</td>
+            <td>USA</td>
+            <td>2004</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Half Life: Episode Two
+            </td>
+            <td>Valve</td>
+            <td>Action</td>
+            <td>USA</td>
+            <td>2007</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Prototype
+            </td>
+            <td>Electronic arts</td>
+            <td>2009</td>
+            <td>France</td>
+            <td>2009</td>
+            <td>5</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Crysis
+            </td>
+            <td>Electronic arts</td>
+            <td>Actiom</td>
+            <td>France</td>
+            <td>2007</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Half Life
+            </td>
+            <td>Valve</td>
+            <td>Action</td>
+            <td>USA</td>
+            <td>1998</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Max Payne 2: The Fall of Max Payne
+            </td>
+            <td>Rockstar games</td>
+            <td>Action</td>
+            <td>USA</td>
+            <td>2003</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Alan Wake
+            </td>
+            <td>Microsoft</td>
+            <td>Action</td>
+            <td>USA</td>
+            <td>2010</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Watch Dogs
+            </td>
+            <td>Electronic arts</td>
+            <td>Action</td>
+            <td>France</td>
+            <td>2014</td>
+            <td>5</td>
+        </tr>
+                
+        <tr>
+            <td>
+                The Elder Scrolls 3: Morrowind
+            </td>
+            <td>Bethesda games</td>
+            <td>RPG</td>
+            <td>USA</td>
+            <td>2002</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                World Of Tanks
+            </td>
+            <td>Wargaming</td>
+            <td>Action</td>
+            <td>Russia</td>
+            <td>2010</td>
+            <td>3</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Spore
+            </td>
+            <td>Electronic arts</td>
+            <td>Simulator</td>
+            <td>France</td>
+            <td>2008</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                XCOM: Enemy Unknown
+            </td>
+            <td>2k games</td>
+            <td>Strategy</td>
+            <td>Czech</td>
+            <td>2012</td>
+            <td>8</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Limbo
+            </td>
+            <td>Platdead studio</td>
+            <td>Puzzle</td>
+            <td>Denmark</td>
+            <td>2010</td>
+            <td>9</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Need for Speed Carbon
+            </td>
+            <td>Electronic arts</td>
+            <td>Racing</td>
+            <td>France</td>
+            <td>2006</td>
+            <td>7</td>
+        </tr>
+                
+        <tr>
+            <td>
+                Mafia: The City of Lost Heaven 
+            </td>
+            <td>Take-Two Interactive</td>
+            <td>RPG</td>
+            <td>Italy</td>
+            <td>2002</td>
+            <td>9</td>
+        </tr>
+                 
+    </table>        
+
+    </body>
+</html>
